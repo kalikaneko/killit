@@ -33,6 +33,7 @@ setup(
     description='Kill it with fire',
     classifiers=trove_classifiers,
     install_requires=['urwid', 'psutil'],
+    py_modules=['killit'],
     entry_points={
         'console_scripts': [killit]
     },
