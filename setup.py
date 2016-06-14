@@ -23,7 +23,7 @@ killit = 'killit=killit:main'
 
 setup(
     name='killit',
-    version='0.0.1',
+    version='0.0.2',
     url='https://github.com/kalikaneko/killit',
     license='WTFPL',
     author='Kali Kaneko',
