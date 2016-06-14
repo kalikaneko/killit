@@ -1,18 +1,13 @@
 Kill it
--------
-Kill it with fire.
+=======
+*Kill it with fire*
 
-Usage:
+Usage
+-----
+What you can imagine::
+
   killit <search term>
 
-
-*KILL DASH NINE,*
-
-*No more CPU time.*
-
-*I run KILL DASH NINE,*
-
-*And your process is mine.*
 
 Install
 -------
@@ -24,3 +19,10 @@ To-Do
 -----
 * [ ] display owner, cpu etc
 * [ ] check if user has permissions to kill
+
+FAQ
+---
+
+Q: Why not htop/pkill/etc?
+
+A: I'm lazy.
