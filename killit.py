@@ -60,16 +60,19 @@ class Menu(object):
         body = [urwid.Text(title), urwid.Divider()]
         for c in choices:
             button = urwid.Button(c)
-            urwid.connect_signal(button, 'click', self.item_chosen, c)
+            urwid.connect_signal(button, 'click', self.kill_chosen, c)
             body.append(urwid.AttrMap(button, None, focus_map='reversed'))
         listbox = urwid.ListBox(urwid.SimpleFocusListWalker(body))
         self.listbox = listbox
         return listbox
 
-    def item_chosen(self, button, choice):
+    def kill_chosen(self, button, choice):
         pid = int(choice.split(':')[0])
-        _proc[pid].kill()
-        self._remove_item(button)
+        try:
+            _proc[pid].kill()
+            self._remove_item(button)
+        except psutil.AccessDenied:
+            pass
 
     def _remove_item(self, button):
         for item in self.listbox.body:

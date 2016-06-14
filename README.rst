@@ -18,7 +18,7 @@ Please go to the cheese shop::
 To-Do
 -----
 * [ ] display owner, cpu etc
-* [ ] check if user has permissions to kill
+* [ ] display error if has no permission to kill
 
 FAQ
 ---
